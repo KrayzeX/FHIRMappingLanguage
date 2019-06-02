@@ -1,0 +1,35 @@
+{
+    "transformations": [
+        {
+            "oldPath": [
+                "item", "sequenceLinkId"
+            ],
+            "op":"move",
+            "newPath": [
+                "item", "itemSequence"
+            ]
+        },
+        {
+            "oldPath": [
+                "requestProvider"
+            ],
+            "op": "move",
+            "newPath": "requestor"
+        },
+        {
+            "oldPath": [],
+            "op": "add",
+            "newPath": "subType"
+        },
+        {
+            "oldPath": [],
+            "op": "add",
+            "newPath": "type"
+        },
+        {
+            "oldPath": [],
+            "op": "add",
+            "newPath": "use"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "fhirmapping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mappingEngine.js",
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Aleksei Chistiakov",
+  "license": "ISC"
+}
