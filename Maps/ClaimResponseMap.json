@@ -30,6 +30,16 @@
             "oldPath": [],
             "op": "add",
             "newPath": "use"
+        },
+        {
+            "oldPath": [],
+            "op": "add",
+            "newPath": "total"
+        },
+        {
+            "oldPath": ["total"],
+            "op": "add",
+            "newPath": ["total", "amount"]
         }
     ]
 }
