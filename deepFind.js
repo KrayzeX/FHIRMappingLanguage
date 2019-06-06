@@ -1,4 +1,11 @@
 function deepFind(obj, path) {
+    /**
+     * Функция получает элемент из объекта по переданному пути
+     *
+     * @author Алексей Чистяков <alexey.chisti@gmail.com>
+     * @param {object} obj - объект, внутри которого идет поиск элемента
+     * @param {string} path - путь внутри объекта, по которому необходимо получить элемент
+     */
     var paths = path.split('.')
     , current = obj
     , i;

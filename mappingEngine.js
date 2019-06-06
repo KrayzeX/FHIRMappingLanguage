@@ -9,6 +9,14 @@ var jsonObjectMap = initData.getObjectFromFile('./Maps/ClaimResponseMap.json');
 var saveResource = Object.assign({},jsonObjectRes);
 
 function mappingEngine(oldVersionResource, mapOfTtansformation){
+    /**
+     * Движок, который преобразует старый ресурс в новый по полученной карте
+     *
+     * @author Алексей Чистяков <alexey.chisti@gmail.com>
+     * @param {object} oldVersionResource - ресурс прошлой версии стандарта
+     * @param {object} mapOfTtansformation - карта преобразований
+     *
+     */
 
     for (let i = 0; i < 3 /*jsonObjectMap.transformations.length*/; i++){
 
