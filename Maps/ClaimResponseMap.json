@@ -2,44 +2,29 @@
     "transformations": [
         {
             "oldPath": [
-                "item", "sequenceLinkId"
+                "resource","item","0", "sequenceLinkId"
             ],
             "op":"move",
             "newPath": [
-                "item", "itemSequence"
+                "resource","item","0", "itemSequence"
             ]
         },
         {
             "oldPath": [
-                "requestProvider"
+                "resource","requestProvider"
             ],
             "op": "move",
-            "newPath": "requestor"
+            "newPath": ["resource","requestor"]
         },
         {
             "oldPath": [],
             "op": "add",
-            "newPath": "subType"
+            "newPath": ["resource","total"]
         },
         {
-            "oldPath": [],
+            "oldPath": ["resource","total"],
             "op": "add",
-            "newPath": "type"
-        },
-        {
-            "oldPath": [],
-            "op": "add",
-            "newPath": "use"
-        },
-        {
-            "oldPath": [],
-            "op": "add",
-            "newPath": "total"
-        },
-        {
-            "oldPath": ["total"],
-            "op": "add",
-            "newPath": ["total", "amount"]
+            "newPath": ["resource","total", "amount"]
         }
     ]
 }

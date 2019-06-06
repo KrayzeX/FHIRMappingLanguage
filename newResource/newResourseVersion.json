@@ -1,316 +1,313 @@
 {
-  "resource": {
-    "patient": {
-      "id": "473407",
-      "resource": {
-        "name": [
-          {
-            "use": "usual",
-            "given": [
-              "Peter"
-            ],
-            "family": "Barbera"
-          }
-        ],
-        "gender": "male",
-        "address": [
-          {
-            "use": "home",
-            "city": "Jackson hts",
-            "line": [
-              "34-20 79th St #3A"
-            ],
-            "state": "NY",
-            "postalCode": "11372"
-          }
-        ],
-        "birthDate": "1955-09-10",
-        "identifier": [
-          {
-            "value": "473407",
-            "system": "http://cleo.old.com/mrn"
-          },
-          {
-            "value": "080480786",
-            "system": "http://hl7.org/fhir/sid/us-ssn"
-          }
-        ],
-        "resourceType": "Patient"
-      },
-      "resourceType": "Patient"
-    },
-    "requestOrganization": {
-      "display": "Metro Dermatology New York",
-      "identifier": {
-        "value": "1336343268",
-        "system": "http://cleoehr.com/npi"
-      },
-      "resourceType": "Organization"
-    },
-    "request": {
-      "id": "c51f769b-730a-45ce-bf5c-99a7b9f1883a",
-      "resourceType": "Claim"
-    },
-    "meta": {
-      "lastUpdated": "2019-04-15T14:56:27.308Z",
-      "versionId": "4499632",
-      "tag": [
-        {
-          "system": "https://aidbox.app",
-          "code": "updated"
-        }
-      ]
-    },
-    "encounter": {
-      "id": "f8f6336f-7f55-46fa-aa54-1ec85c125340",
-      "resourceType": "Encounter"
-    },
-    "payment": {
-      "date": "2019-03-21",
-      "type": {
-        "coding": [
-          {
-            "code": "complete",
-            "system": "http://hl7.org/fhir/ex-paymenttype"
-          }
-        ]
-      },
-      "amount": {
-        "code": "USD",
-        "value": 0
-      }
-    },
-    "item": [
-      {
-        "fee": {
-          "code": "USD",
-          "value": 250.54
+    "resource": {
+        "patient": {
+            "id": "473407",
+            "resource": {
+                "name": [
+                    {
+                        "use": "usual",
+                        "given": [
+                            "Peter"
+                        ],
+                        "family": "Barbera"
+                    }
+                ],
+                "gender": "male",
+                "address": [
+                    {
+                        "use": "home",
+                        "city": "Jackson hts",
+                        "line": [
+                            "34-20 79th St #3A"
+                        ],
+                        "state": "NY",
+                        "postalCode": "11372"
+                    }
+                ],
+                "birthDate": "1955-09-10",
+                "identifier": [
+                    {
+                        "value": "473407",
+                        "system": "http://cleo.old.com/mrn"
+                    },
+                    {
+                        "value": "080480786",
+                        "system": "http://hl7.org/fhir/sid/us-ssn"
+                    }
+                ],
+                "resourceType": "Patient"
+            },
+            "resourceType": "Patient"
         },
-        "remark": null,
-        "service": {
-          "coding": [
+        "requestOrganization": {
+            "display": "Metro Dermatology New York",
+            "identifier": {
+                "value": "1336343268",
+                "system": "http://cleoehr.com/npi"
+            },
+            "resourceType": "Organization"
+        },
+        "request": {
+            "id": "c51f769b-730a-45ce-bf5c-99a7b9f1883a",
+            "resourceType": "Claim"
+        },
+        "meta": {
+            "lastUpdated": "2019-04-15T14:56:27.308Z",
+            "versionId": "4499632",
+            "tag": [
+                {
+                    "system": "https://aidbox.app",
+                    "code": "updated"
+                }
+            ]
+        },
+        "encounter": {
+            "id": "f8f6336f-7f55-46fa-aa54-1ec85c125340",
+            "resourceType": "Encounter"
+        },
+        "payment": {
+            "date": "2019-03-21",
+            "type": {
+                "coding": [
+                    {
+                        "code": "complete",
+                        "system": "http://hl7.org/fhir/ex-paymenttype"
+                    }
+                ]
+            },
+            "amount": {
+                "code": "USD",
+                "value": 0
+            }
+        },
+        "item": [
             {
-              "code": "99214",
-              "display": "Office visit, est, mod (OVE)"
+                "fee": {
+                    "code": "USD",
+                    "value": 250.54
+                },
+                "remark": null,
+                "service": {
+                    "coding": [
+                        {
+                            "code": "99214",
+                            "display": "Office visit, est, mod (OVE)"
+                        }
+                    ]
+                },
+                "modifier": [],
+                "serviced": {
+                    "date": "2019-03-07"
+                },
+                "adjudication": [
+                    {
+                        "amount": {
+                            "code": "USD",
+                            "value": 250.54
+                        },
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "billed",
+                                    "display": "Billed amount"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "amount": {
+                            "code": "USD",
+                            "value": 0
+                        },
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "benefit",
+                                    "display": "Benefit amount"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "amount": {
+                            "code": "USD",
+                            "value": 91.24
+                        },
+                        "reason": {
+                            "coding": [
+                                {
+                                    "code": "1",
+                                    "display": "Deductible Amount"
+                                }
+                            ]
+                        },
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "PR",
+                                    "display": "Patient Responsibility"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "amount": {
+                            "code": "USD",
+                            "value": 159.3
+                        },
+                        "reason": {
+                            "coding": [
+                                {
+                                    "code": "45",
+                                    "display": "Charge exceeds fee schedule/maximum allowable or contracted/legislated fee arrangement."
+                                }
+                            ]
+                        },
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "CO",
+                                    "display": "Contractual Obligations"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "amount": {
+                            "code": "USD",
+                            "value": 91.24
+                        },
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "B6",
+                                    "display": "Allowed amount"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "itemSequence": 1
             }
-          ]
-        },
-        "modifier": [],
-        "serviced": {
-          "date": "2019-03-07"
-        },
-        "adjudication": [
-          {
-            "amount": {
-              "code": "USD",
-              "value": 250.54
-            },
-            "category": {
-              "coding": [
-                {
-                  "code": "billed",
-                  "display": "Billed amount"
-                }
-              ]
-            }
-          },
-          {
-            "amount": {
-              "code": "USD",
-              "value": 0
-            },
-            "category": {
-              "coding": [
-                {
-                  "code": "benefit",
-                  "display": "Benefit amount"
-                }
-              ]
-            }
-          },
-          {
-            "amount": {
-              "code": "USD",
-              "value": 91.24
-            },
-            "reason": {
-              "coding": [
-                {
-                  "code": "1",
-                  "display": "Deductible Amount"
-                }
-              ]
-            },
-            "category": {
-              "coding": [
-                {
-                  "code": "PR",
-                  "display": "Patient Responsibility"
-                }
-              ]
-            }
-          },
-          {
-            "amount": {
-              "code": "USD",
-              "value": 159.3
-            },
-            "reason": {
-              "coding": [
-                {
-                  "code": "45",
-                  "display": "Charge exceeds fee schedule/maximum allowable or contracted/legislated fee arrangement."
-                }
-              ]
-            },
-            "category": {
-              "coding": [
-                {
-                  "code": "CO",
-                  "display": "Contractual Obligations"
-                }
-              ]
-            }
-          },
-          {
-            "amount": {
-              "code": "USD",
-              "value": 91.24
-            },
-            "category": {
-              "coding": [
-                {
-                  "code": "B6",
-                  "display": "Allowed amount"
-                }
-              ]
-            }
-          }
         ],
-        "itemSequence": 1
-      }
-    ],
-    "created": "2019-03-22T15:17:00.717Z",
-    "outcome": {
-      "text": "Use this code if the claim was adjudicated by the current payer as primary regardless of whether any part of the claim was paid.",
-      "coding": [
-        {
-          "code": "1",
-          "system": "http://www.x12.org/codes/claim-payment-status-codes/",
-          "display": "processed as primary"
-        }
-      ]
-    },
-    "totalBenefit": {
-      "code": "USD",
-      "value": 0
-    },
-    "resourceType": "ClaimResponse",
-    "disposition": "CLP-2RYM1CML9U11ZGNCL7M-1-250.54-0-91.24-HM-9073E33606-11",
-    "serviceDate": "2019-03-07",
-    "totalPatientResponsibility": {
-      "code": "USD",
-      "value": 91.24
-    },
-    "receivedDate": "2019-03-18",
-    "insurer": {
-      "display": "OXFORD HEALTH PLANS NY INC",
-      "identifier": {
-        "value": "OXFORD HEALTH PLANS NY INC",
-        "system": "http://cleoehr.com/name"
-      },
-      "resourceType": "Organization"
-    },
-    "subscriber": null,
-    "status": "reviewed",
-    "id": "c7b92c2a-8b81-4d27-a93d-92f077cc57be",
-    "identifier": [
-      {
-        "value": "2RYM1CML9U11ZGNCL7M",
-        "system": "https://platform.pokitdok.com/claim-id"
-      },
-      {
-        "value": "9073E33606",
-        "system": "https://platform.pokitdok.com/payor-claim-id"
-      }
-    ],
-    "totalCost": {
-      "code": "USD",
-      "value": 250.54
-    },
-    "serviceLocation": {
-      "id": "6",
-      "display": "Elmhurst",
-      "resourceType": "Location"
-    },
-    "subType": "",
-    "type": "",
-    "use": "",
-    "requestor": {
-      "id": "45359402",
-      "resource": {
-        "name": [
-          {
-            "use": "official",
-            "text": "Marie C Leger",
-            "given": [
-              "Marie",
-              "C"
-            ],
-            "family": "Leger",
-            "prefix": [
-              "Ms"
-            ],
-            "suffix": [
-              "MD"
+        "created": "2019-03-22T15:17:00.717Z",
+        "outcome": {
+            "text": "Use this code if the claim was adjudicated by the current payer as primary regardless of whether any part of the claim was paid.",
+            "coding": [
+                {
+                    "code": "1",
+                    "system": "http://www.x12.org/codes/claim-payment-status-codes/",
+                    "display": "processed as primary"
+                }
             ]
-          },
-          {
-            "given": [
-              "MARIE",
-              "CLAIRE"
-            ],
-            "family": "LEGER",
-            "prefix": [
-              "MD"
-            ]
-          }
-        ],
+        },
+        "totalBenefit": {
+            "code": "USD",
+            "value": 0
+        },
+        "resourceType": "ClaimResponse",
+        "disposition": "CLP-2RYM1CML9U11ZGNCL7M-1-250.54-0-91.24-HM-9073E33606-11",
+        "serviceDate": "2019-03-07",
+        "totalPatientResponsibility": {
+            "code": "USD",
+            "value": 91.24
+        },
+        "receivedDate": "2019-03-18",
+        "insurer": {
+            "display": "OXFORD HEALTH PLANS NY INC",
+            "identifier": {
+                "value": "OXFORD HEALTH PLANS NY INC",
+                "system": "http://cleoehr.com/name"
+            },
+            "resourceType": "Organization"
+        },
+        "subscriber": null,
+        "status": "reviewed",
+        "id": "c7b92c2a-8b81-4d27-a93d-92f077cc57be",
         "identifier": [
-          {
-            "value": "FL2735833",
-            "system": "http://cleo.com/nj-dea"
-          },
-          {
-            "value": "113267153",
-            "system": "http://cleo.com/ny-tax-id"
-          },
-          {
-            "value": "03462737",
-            "system": "http://cleo.com/ny-medicaid"
-          },
-          {
-            "value": "255388",
-            "system": "http://cleo.com/ny-state-license"
-          },
-          {
-            "value": "1144483843",
-            "system": "http://hl7.org/fhir/sid/us-npi"
-          },
-          {
-            "value": "A400151534-",
-            "system": "http://cleo.com/ny-medicare"
-          },
-          {
-            "value": "Ml1",
-            "system": "http://cleo.com/user-id"
-          }
+            {
+                "value": "2RYM1CML9U11ZGNCL7M",
+                "system": "https://platform.pokitdok.com/claim-id"
+            },
+            {
+                "value": "9073E33606",
+                "system": "https://platform.pokitdok.com/payor-claim-id"
+            }
         ],
-        "resourceType": "Practitioner"
-      },
-      "resourceType": "Practitioner"
+        "totalCost": {
+            "code": "USD",
+            "value": 250.54
+        },
+        "serviceLocation": {
+            "id": "6",
+            "display": "Elmhurst",
+            "resourceType": "Location"
+        },
+        "requestor": {
+            "id": "45359402",
+            "resource": {
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "Marie C Leger",
+                        "given": [
+                            "Marie",
+                            "C"
+                        ],
+                        "family": "Leger",
+                        "prefix": [
+                            "Ms"
+                        ],
+                        "suffix": [
+                            "MD"
+                        ]
+                    },
+                    {
+                        "given": [
+                            "MARIE",
+                            "CLAIRE"
+                        ],
+                        "family": "LEGER",
+                        "prefix": [
+                            "MD"
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "value": "FL2735833",
+                        "system": "http://cleo.com/nj-dea"
+                    },
+                    {
+                        "value": "113267153",
+                        "system": "http://cleo.com/ny-tax-id"
+                    },
+                    {
+                        "value": "03462737",
+                        "system": "http://cleo.com/ny-medicaid"
+                    },
+                    {
+                        "value": "255388",
+                        "system": "http://cleo.com/ny-state-license"
+                    },
+                    {
+                        "value": "1144483843",
+                        "system": "http://hl7.org/fhir/sid/us-npi"
+                    },
+                    {
+                        "value": "A400151534-",
+                        "system": "http://cleo.com/ny-medicare"
+                    },
+                    {
+                        "value": "Ml1",
+                        "system": "http://cleo.com/user-id"
+                    }
+                ],
+                "resourceType": "Practitioner"
+            },
+            "resourceType": "Practitioner"
+        },
+        "total": {}
     },
-    "total": {}
-  },
-  "fullUrl": "/ClaimResponse/c7b92c2a-8b81-4d27-a93d-92f077cc57be"
+    "fullUrl": "/ClaimResponse/c7b92c2a-8b81-4d27-a93d-92f077cc57be"
 }
