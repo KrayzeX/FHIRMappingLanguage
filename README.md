@@ -9,25 +9,6 @@ The code snippet is shown below.
 ```
 //JavaScript code
 
-    for (let i = 0; i < 3 /*jsonObjectMap.transformations.length*/; i++){
-
-        let oldPathFromMap = jsonObjectMap.transformations[i].oldPath.toString();
-        oldPathFromMap = oldPathFromMap.split(',');
-        oldPathFromMap = oldPathFromMap.join('.');
-        //console.log(oldPathFromMap);
-
-        let operation = jsonObjectMap.transformations[i].op.toString();
-
-        let newPathFromMap = jsonObjectMap.transformations[i].newPath.toString();
-        newPathFromMap = newPathFromMap.split(',');
-        newPathFromMap = newPathFromMap.join('.');
-        //console.log(operation);
-
-        let elementFromPath = takeElement(jsonObjectRes, oldPathFromMap);
-        //console.log(elementFromPath);
-        //console.log(newPathFromMap);
-        //console.log('=========');
-
         switch(operation){
         case 'move':
             setElement(newPathFromMap, saveResource, elementFromPath);
