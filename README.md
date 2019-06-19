@@ -6,4 +6,4 @@ The engine works automatically. It receives a transformation map as input and ap
 
 The code snippet is shown below.
 
-![example](https://github.com/KrayzeX/FHIRMappingLanguage/tree/master/Examples/exampleEngine.png)
+![exampleEngine](https://user-images.githubusercontent.com/25884047/59756959-6b539b80-9293-11e9-8d97-9693bdc2e723.png)
