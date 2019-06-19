@@ -42,3 +42,6 @@ The code snippet is shown below.
     }
 
 ```
+## How it works
+Example
+![example](https://user-images.githubusercontent.com/25884047/59758336-5af0f000-9296-11e9-97d2-9e55bfbb9cea.png)
