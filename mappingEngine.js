@@ -3,6 +3,7 @@ var takeElement = require('./deepFind.js');
 var fs = require("fs");
 var setElement = require('set-deep');
 var objectPath = require('object-path');
+var deepDelete = require('./deepDelete.js');
 
 var jsonObjectRes = initData.getObjectFromFile('./oldResources/resource1.json');
 var jsonObjectMap = initData.getObjectFromFile('./Maps/ClaimResponseMap.json');
@@ -40,7 +41,7 @@ function mappingEngine(oldVersionResource, mapOfTtansformation){
         switch(operation){
         case 'move':
             setElement(newPathFromMap, saveResource, elementFromPath);
-            objectPath.del(saveResource, oldPathFromMap);
+            deepDelete(oldPathFromMap, saveResource);
             break;
         case 'add':
             setElement(newPathFromMap, saveResource, {});
