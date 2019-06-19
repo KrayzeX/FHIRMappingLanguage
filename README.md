@@ -45,37 +45,4 @@ The code snippet is shown below.
 ## How it works
 Example
 
-| Old version resource     | New version resource |
-|--------------------------+----------------------|
-| ```                      |                      |
-| "requestProvider": {     |                      |
-| "id": "45359402",        |                      |
-| "resource": {            |                      |
-| "name": [                |                      |
-| {                        |                      |
-| "use": "official",       |                      |
-| "text": "Marie C Leger", |                      |
-| "given": [               |                      |
-| "Marie",                 |                      |
-| "C"                      |                      |
-| ],                       |                      |
-| "family": "Leger",       |                      |
-| "prefix": [              |                      |
-| "Ms"                     |                      |
-| ],                       |                      |
-| "suffix": [              |                      |
-| "MD"                     |                      |
-| ]                        |                      |
-| },                       |                      |
-| {                        |                      |
-| "given": [               |                      |
-| "MARIE",                 |                      |
-| "CLAIRE"                 |                      |
-| ],                       |                      |
-| "family": "LEGER",       |                      |
-| "prefix": [              |                      |
-| "MD"                     |                      |
-| ]                        |                      |
-| }                        |                      |
-| ],                       |                      |
-|```                       |                      |
+![Снимок экрана от 2019-06-19 13-59-58](https://user-images.githubusercontent.com/25884047/59760278-9a214000-929a-11e9-927a-032675b1a981.png)
