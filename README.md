@@ -6,4 +6,39 @@ The engine works automatically. It receives a transformation map as input and ap
 
 The code snippet is shown below.
 
-![exampleEngine](https://user-images.githubusercontent.com/25884047/59756959-6b539b80-9293-11e9-8d97-9693bdc2e723.png)
+```
+//JavaScript code
+
+    for (let i = 0; i < 3 /*jsonObjectMap.transformations.length*/; i++){
+
+        let oldPathFromMap = jsonObjectMap.transformations[i].oldPath.toString();
+        oldPathFromMap = oldPathFromMap.split(',');
+        oldPathFromMap = oldPathFromMap.join('.');
+        //console.log(oldPathFromMap);
+
+        let operation = jsonObjectMap.transformations[i].op.toString();
+
+        let newPathFromMap = jsonObjectMap.transformations[i].newPath.toString();
+        newPathFromMap = newPathFromMap.split(',');
+        newPathFromMap = newPathFromMap.join('.');
+        //console.log(operation);
+
+        let elementFromPath = takeElement(jsonObjectRes, oldPathFromMap);
+        //console.log(elementFromPath);
+        //console.log(newPathFromMap);
+        //console.log('=========');
+
+        switch(operation){
+        case 'move':
+            setElement(newPathFromMap, saveResource, elementFromPath);
+            deepDelete(oldPathFromMap, saveResource);
+            break;
+        case 'add':
+            setElement(newPathFromMap, saveResource, {});
+            break;
+        default:
+            new Error('Operations are not find!');
+        }
+    }
+
+```
