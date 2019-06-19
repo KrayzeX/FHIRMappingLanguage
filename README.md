@@ -44,4 +44,65 @@ The code snippet is shown below.
 ```
 ## How it works
 Example
-![example](https://user-images.githubusercontent.com/25884047/59758336-5af0f000-9296-11e9-97d2-9e55bfbb9cea.png)
+
+| Old version resource | New version resource |
+|--------------------- |--------------------- |
+| "requestProvider": {
+                    "id": "45359402",
+                    "resource": {
+                        "name": [
+                            {
+                                "use": "official",
+                                "text": "Marie C Leger",
+                                "given": [
+                                    "Marie",
+                                    "C"
+                                ],
+                                "family": "Leger",
+                                "prefix": [
+                                    "Ms"
+                                ],
+                                "suffix": [
+                                    "MD"
+                                ]
+                            },
+                            {
+                                "given": [
+                                    "MARIE",
+                                    "CLAIRE"
+                                ],
+                                "family": "LEGER",
+                                "prefix": [
+                                    "MD"
+                                ]
+                            }
+                        ],                     | "requestor": {
+            "id": "45359402",
+            "resource": {
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "Sarge C Leger",
+                        "given": [
+                            "Marie",
+                            "C"
+                        ],
+                        "family": "Leger",
+                        "prefix": [
+                            "Ms"
+                        ],
+                        "suffix": [
+                            "MD"
+                        ]
+                    },
+                    {
+                        "given": [
+                            "MARIE",
+                            "CLAIRE"
+                        ],
+                        "family": "LEGER",
+                        "prefix": [
+                            "MD"
+                        ]
+                    }
+                ],                     |
