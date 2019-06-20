@@ -1,5 +1,5 @@
 # FHIR Mapping Language
-Describes the implementation of FHIR Mapping Language. It is necessary to trnasfer FHIR resources from one version of FHIR standart to another.
+Describes the implementation of FHIR Mapping Language. It is necessary to transfer FHIR resources from one version of FHIR standart to another.
 
 ## How to install it
 ```
